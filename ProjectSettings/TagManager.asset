@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Net
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Post
+    uniqueID: 118249815
+    locked: 0
+  - name: Backboard
+    uniqueID: 2863566773
+    locked: 0
+  - name: Rim
+    uniqueID: 946107441
+    locked: 0
+  - name: Net
+    uniqueID: 3204081413
     locked: 0
