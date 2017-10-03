@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Net
   - Ground
+  - MenuBall
+  - Rim
+  - Post
+  - Backboard
   layers:
   - Default
   - TransparentFX
