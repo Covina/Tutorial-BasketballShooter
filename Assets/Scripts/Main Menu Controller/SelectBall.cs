@@ -43,7 +43,12 @@ public class SelectBall : MonoBehaviour {
         //Debug.Log("The selected ball is [" + ballIndex + "]");
 
         // Inform the GameManager which ball the player equipped
+        if(GameManager.instance != null)
+        {
+            // Set ball color index
+            GameManager.instance.SelectBallColor(ballIndex);
 
+        }
     }
 
 }
