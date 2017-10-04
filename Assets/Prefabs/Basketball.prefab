@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212093989770294352}
   - component: {fileID: 58675810405789166}
   - component: {fileID: 50801587851825990}
+  - component: {fileID: 114877189184417888}
   m_Layer: 0
   m_Name: Basketball
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1783955565444722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: 1.54, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.43, y: 0.43, z: 0.43}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,6 +78,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.905
+--- !u!114 &114877189184417888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783955565444722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f5bd599ecbb104ca82db7871cf6c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dots: 30
+  dotObj: {fileID: 1506117354933382, guid: b39f49149dac88344aa00bf7a51dcf94, type: 2}
 --- !u!212 &212093989770294352
 SpriteRenderer:
   m_ObjectHideFlags: 1

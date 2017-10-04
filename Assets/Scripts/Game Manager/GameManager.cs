@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour {
         ballCreator.CreateBall(index);
     }
 
+
     // Store which ball has been selected
     public void SelectBallColor(int index)
     {
