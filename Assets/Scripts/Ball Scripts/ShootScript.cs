@@ -47,14 +47,6 @@ public class ShootScript : MonoBehaviour {
 
         Dots = GameObject.Find("DotsContainer");
 
-        // make the dots
-        for(int i = 0; i < dots; i++)
-        {
-            // Spawn the dot
-            Instantiate(dotObj, Dots.transform);
-        }
-
-
         // disable physics
         myBody.isKinematic = true;
 
@@ -81,6 +73,32 @@ public class ShootScript : MonoBehaviour {
 	void Update () {
 
         Aim();
+
+        if (hit_ground == true)
+        {
+            // Subtract time to control how long it takes to fade away
+            life -= Time.deltaTime;
+
+            // get current color value (alpha included)
+            Color c = GetComponent<Renderer>().material.GetColor("_Color");
+
+            // adjust the alpha channel
+            GetComponent<Renderer>().material.SetColor("_Color", new Color (c.r, c.g, c.b, life));
+
+            if(life <= 0)
+            {
+                // reset hit ground
+                hit_ground = false;
+
+                // Spawn a new ball
+                GameManager.instance.SpawnBall();
+
+                // destroy the basketball
+                Destroy(gameObject);
+
+            }
+
+        }
 
 	}
 
@@ -241,6 +259,22 @@ public class ShootScript : MonoBehaviour {
         }
 
     }
+
+    // check if we hit the ground
+    private void OnCollisionEnter2D(Collision2D target)
+    {
+        // check what we hit.
+        if(target.gameObject.tag == "Ground")
+        {
+
+            // Set the hit ground state to true;
+            hit_ground = true;
+
+        }
+
+
+    }
+
 
 
 }

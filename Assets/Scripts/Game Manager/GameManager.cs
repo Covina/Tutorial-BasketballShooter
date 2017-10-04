@@ -61,16 +61,16 @@ public class GameManager : MonoBehaviour {
         // if we are on the gameplay screen, create the basketball
         if(scene.name == "Gameplay")
         {
-            SpawnBall(ballIndex);
+            SpawnBall();
         }
 
     }
 
     // Create the basketball game object
-    public void SpawnBall(int index)
+    public void SpawnBall()
     {
         // Call the create ball function
-        ballCreator.CreateBall(index);
+        ballCreator.CreateBall(ballIndex);
     }
 
 

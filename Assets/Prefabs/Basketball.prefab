@@ -71,7 +71,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1783955565444722}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a3f398ed5d7e6c344805bae8ae36ee43, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -90,6 +90,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dots: 30
+  power: 2
+  life: 1
+  dead_sense: 25
   dotObj: {fileID: 1506117354933382, guid: b39f49149dac88344aa00bf7a51dcf94, type: 2}
 --- !u!212 &212093989770294352
 SpriteRenderer:
