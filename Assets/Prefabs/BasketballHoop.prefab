@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 61673048373051718}
   m_Layer: 11
   m_Name: Rim2
-  m_TagString: Untagged
+  m_TagString: Rim
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 61530735072643330}
   m_Layer: 0
   m_Name: BasketballHoop
-  m_TagString: Untagged
+  m_TagString: Post
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 61011851554469132}
   m_Layer: 11
   m_Name: Rim1
-  m_TagString: Untagged
+  m_TagString: Rim
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 60392552643684976}
   m_Layer: 0
   m_Name: Backboard
-  m_TagString: Untagged
+  m_TagString: Backboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

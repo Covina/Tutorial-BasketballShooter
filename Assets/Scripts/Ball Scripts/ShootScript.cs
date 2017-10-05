@@ -151,13 +151,16 @@ public class ShootScript : MonoBehaviour {
             myBody.isKinematic = false;     // Prepare ball for physics
             myCollider.enabled = true;      // enable collider to bounce off rim
             isShooting = true;              // put us in the shooting state
-            isAiming = false;                // put us in the aiming state
+            isAiming = false;               // put us in the aiming state
 
             // Shoot the ball
             myBody.AddForce(GetForce(Input.mousePosition));
 
             // hide the dots
             HidePath();
+
+            // Now that we have shot, decrement the balls remaining
+            GameManager.instance.DecrementBalls(1);
 
         }
 
